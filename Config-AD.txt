@@ -1,0 +1,35 @@
+# =====================================================================
+#  Configuration - Creation AD
+#  Format : Cle = Valeur   ( # = commentaire, lignes vides ignorees )
+#  Listes : valeurs separees par des virgules
+#  Ce fichier doit se trouver dans le MEME dossier que le script .ps1
+# =====================================================================
+
+# Domaine utilise pour l'UPN et l'email  (login@domaine / prenom.nom@domaine)
+MailDomain             = votre-domaine.tld
+
+# Journal CSV des creations
+LogPath                = C:\Temp\AD_User_Log.csv
+
+# Description par defaut du compte (ex : Service / Site)
+DefaultDescription     =
+
+# Valeur par defaut de employeeType (ex : YES)
+DefaultEmployeeType    =
+
+# Suffixe ajoute a extensionAttribute12  (ex : .xx -> prenom.nom.xx)
+DefaultExtAttr12Suffix =
+
+# Valeur par defaut de extensionAttribute13 (ex : sync)
+DefaultExtAttr13       =
+
+# Groupes a pre-remplir dans l'onglet "Groupes a ajouter"
+# Plusieurs groupes : separes par des virgules
+DefaultGroupsToAdd     =
+
+# Groupes a pre-remplir dans l'onglet "Groupes a retirer" (Remove-ADGroupMember)
+# Plusieurs groupes : separes par des virgules
+DefaultGroupsToRemove  =
+
+# Vider les attributs Exchange a la creation : true / false
+ClearExchangeDefault   = true
